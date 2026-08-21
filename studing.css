@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.game-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.game-header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.my-game-tag {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 0.9rem;
+  color: #ffd369;
+  font-weight: bold;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 620px;
+  text-align: center;
+}
+
+.sub-text {
+  margin: 10px 0 25px;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+.game-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.section-title {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.section-content {
+  display: flex;
+  justify-content: center;
+}
+
+#game-board {
+  border: 3px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#game-board canvas {
+  display: block;
+}
+.game-header h1 {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, transform 2.00s ease;
+}
+
+.game-header h1:hover {
+  border-color: #ffd369;
+  transform: scale(1.70);
+}
