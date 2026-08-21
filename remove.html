@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <u1 id="list">
+        <li>hashir</li>
+        <li>khan shb</li>
+        <li>ashad</li>
+        <li>child 1</li>
+    </u1>
+    <button id="remove">Remove</button>
+
+    <script>
+        document.querySelector('#remove').addEventListener('click', () => {
+            document.querySelector('#list').removeChild(document.querySelector('#list').lastElementChild);
+        });
+    </script>
+</body>
+</html>
